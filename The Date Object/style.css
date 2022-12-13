@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#date {
+  background-color: red;
+  width: 5vw;
+}/*# sourceMappingURL=style.css.map */

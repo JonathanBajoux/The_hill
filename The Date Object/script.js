@@ -23,10 +23,12 @@ document.getElementById('Anchorage').innerHTML = 'Anchorage : ' + Anchorage;
 
 let Reykjavik = date1.toLocaleString('en-US',{
     timeZone: 'Atlantic/Reykjavik',year: 'numeric',month: 'numeric',day: 'numeric',hour: 'numeric',minute: 'numeric',second: 'numeric'});
+
 document.getElementById('Reykjavik').innerHTML = 'Reykjavik : ' + Reykjavik;
 
 let Saint_Petersburg = date1.toLocaleString('ru-RU',{
     timeZone: 'Europe/Moscow',year: 'numeric',month: 'numeric',day: 'numeric',hour: 'numeric',minute: 'numeric',second: 'numeric'});
+
 document.getElementById("Saint-Petersburg").innerHTML = 'Saint-Petersburg : ' + Saint_Petersburg;*/
 
 // exercice 2
@@ -45,4 +47,12 @@ today.setHours(today.getHours() + 80000);
 document.body.innerHTML = today;*/
 
 // exercice 4
+setInterval(() => {
+let date1 = new Date();
 
+let date3 = date1.toLocaleString('fr-FR', {
+    weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'
+    
+});
+document.getElementById('date').innerHTML = date3;
+}, 1000);
