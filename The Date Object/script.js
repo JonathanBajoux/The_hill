@@ -48,11 +48,18 @@ document.body.innerHTML = today;*/
 
 // exercice 4
 setInterval(() => {
-let date1 = new Date();
+    let date1 = new Date();
 
-let date3 = date1.toLocaleString('fr-FR', {
-    weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'
-    
-});
-document.getElementById('date').innerHTML = date3;
+    let date3 = date1.toLocaleString('fr-FR', {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+
+    });
+    let temp = document.querySelector('.horloge');
+    temp.innerHTML = date1;
 }, 1000);
